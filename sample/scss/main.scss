@@ -1,0 +1,42 @@
+@import "head";
+@import "image";
+@import "ic";
+
+@include screen(desktop) {
+    .clearfix {
+        &.mainContent {
+            .desktop {
+                display: block;
+            }
+            .tablet,.mobile {
+                display: none;
+            }
+        }
+
+}
+}
+@include screen(tablet) {
+    .clearfix {
+        &.mainContent {
+            .tablet {
+                display: block;
+            }
+            .desktop,.mobile {
+                display: none;
+            }
+}
+    }
+}
+@include screen(mobile) {
+    .clearfix {
+        &.mainContent {
+            .mobile {
+                display: block;
+            }
+            .desktop,.tablet {
+                display: none;
+            } 
+}
+    }
+}
+

@@ -1,0 +1,240 @@
+@import "colors";
+@import "mixins";
+@import "fonts";
+
+.mainContent {
+  .bayer-banner-block {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    .hero-baner-bgImage {
+      .container {
+        width: 100%;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+
+    .banner-image-para {
+      .desktop {
+        .container {
+          img {
+            width: auto;
+            margin-top: 50px;
+            position: absolute;
+            top: 0;
+          }
+        }
+      }
+      .tablet {
+        .container {
+          max-width: 100%;
+          padding: 0 15px;
+          img {
+            width: auto;
+            height: auto;
+            position: absolute;
+            top: 60px;
+          }
+        }
+      }
+      .mobile {
+        .container {
+          img {
+            width: auto;
+            height: auto;
+            position: absolute;
+            top: 0;
+            margin-top: 25px;
+          }
+        }
+      }
+    }
+
+    .bayer-site-name {
+      right: 0;
+      left: auto;
+      margin-right: 0;
+      position: absolute;
+      top: 40px;
+      .desktop {
+        img {
+          width: 100%;
+          height: auto;
+          position: absolute;
+        }
+      }
+      .tablet {
+        img {
+          width: 104px;
+          height: 57px;
+          position: absolute;
+        }
+      }
+      .mobile {
+        img {
+          top: auto;
+          bottom: -2px;
+          width: 95px;
+          height: 52px;
+          position: absolute;
+        }
+      }
+    }
+
+    .bayer-logo {
+      //display: none;
+      position: absolute;
+      right: 32px;
+      top: 40px;
+    }
+
+    .bayer-sponsor-wrapper {
+      display: none;
+    }
+    .febrasgo-logo-wrapper {
+      display: none;
+    }
+    .logo_label {
+      display: none;
+    }
+  }
+  .breadcrums {
+    .visually-hidden {
+      display: none;
+    }
+    li {
+      list-style-type: none;
+      display: inline-block;
+      margin: 10px 0 30px 0;
+      a {
+        text-decoration: none;
+        float: left;
+        padding-right: 5px;
+        letter-spacing: 1.7px;
+        color: #d55b65;
+        font-size: 12px;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .container {
+    width: 1170px;
+    margin: 0 auto;
+    // box-sizing: border-box;
+    .product-introduction__container {
+      //  display: block;
+      position: relative;
+      //  float: none;
+      //  clear: both;
+      .product-introduction__text_right {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .product-introduction__text-column {
+        order: 2;
+        //    width: calc(100% - 100px);
+        display: flex;
+        //   -webkit-box-align: center;
+        //   align-items: center;
+        //  padding: 0;
+        .product-introduction__headline {
+          h1 {
+            margin: 0;
+            padding: 0;
+            font-size: 42px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1;
+            padding-left: 35px;
+            color: #5f2451;
+            font-family: "OpenSans-Regular";
+          }
+        }
+      }
+
+      .product-introduction__image-column {
+        order: 1;
+        width: 100px;
+        img {
+          vertical-align: text-top;
+          width: 103px;
+          height: 80px;
+        }
+      }
+    }
+  }
+  .highlight-container {
+    .video-embed-content {
+      display: none;
+    }
+    .image_teaser {
+      .field__item {
+        :first-child {
+          .desktop {
+            .container {
+              img {
+                width: 100%;
+                height: auto;
+              }
+            }
+          }
+          .tablet {
+            .container {
+              img {
+                width: 100%;
+                height: auto;
+              }
+            }
+          }
+          .mobile {
+            .container {
+              img {
+                width: 100%;
+                height: auto;
+              }
+            }
+          }
+        }
+        /*  :last-child {
+                    width: 48%;
+                float: right;
+                .container {
+                float: left;
+                 width: 100%;
+                padding-left: 0;
+                    padding-right: 0;
+                 .text-intro__body {
+                         margin-bottom: 0;
+                             float: left;
+                             .field__item {
+                                 width: 100%;
+                                 h2 {
+                                     color: #5f2451;
+                                    font-size: 32px;
+                                    font-style: normal;
+                                    font-weight: 300;
+                                    line-height: 1;
+                                 }
+                                 p {
+                                    font-size: 22px;
+                                    line-height: 35px;
+                                    -webkit-margin-before: 0;
+                                    margin-block-start: 0;
+                                    font-weight: 300;
+                                    color: #595959;
+                                    font-family: "OpenSans-Light";
+                                    margin-bottom: 10px;
+                                 }
+                             }
+                 }
+                 }   
+            }
+*/
+      }
+    }
+  }
+}
